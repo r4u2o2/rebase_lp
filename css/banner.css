@@ -1,0 +1,114 @@
+header .banner-link{
+    /* width: 50%;
+    height: 157px; */
+    /* background-color: #FFA8D7;
+    border: 2px solid transparent;
+    border-radius: 35px; */
+}
+header .banner-link::before{
+    /* content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid #707070;
+    border-radius: 35px; */
+}
+
+
+
+header .banner{
+    width: 200px;
+    height: 157px;
+    /* background-color: #FFA8D7; */
+
+    border: 2px solid #ffffff;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    /* z-index: 1; */
+    padding: 5px 3px 5px 13px;
+}
+header .banner::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #FFA8D7;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+}
+
+.fukidashi{
+    position: relative;
+    display: inline-block;
+    margin: 0 0 10px 0;
+    padding: 10px 20px;
+    width: 100%;
+    /* height: 42px; */
+    /* min-width: 100%;
+    max-width: 100%; */
+    color: #ffffff;
+    font-size: 14px;
+    background: #ffffff;
+}
+.fukidashi::before {
+    content: "";
+    position: absolute;
+    top: 98%;
+    left: 20%;
+    margin-left: -15px;
+    border: 8px solid transparent;
+    border-top: 8px solid #ffffff;
+}
+.fukidashi-line{
+    width: 100%;
+    height: 1px;
+    background-color: #707070;
+    
+}
+.fukidashi p{
+    margin-bottom: 5px;
+}
+.banner p{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #707070;
+    text-align: center;
+}
+.banner span{
+    font-size: 10px;
+    color: #707070;
+}
+
+.point{
+    display: flex;
+    position: relative;
+    margin-bottom: 5px;
+}
+.point p{
+    font-family: semplicitapro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.point p:nth-of-type(1){
+    /* -----------------
+    数字css変更
+    ----------------- */
+    font-size: 60px;
+    /* -----------------
+    ４桁の場合：55px
+    ３桁の場合：60px
+    ----------------- */
+    color: rgba(0 0 0 / 0);
+    -webkit-text-stroke: 1px #707070;
+    text-shadow: 3px 3px 0 #ffffff;
+}
+.point p:nth-of-type(2){
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}

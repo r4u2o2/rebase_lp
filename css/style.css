@@ -1,5 +1,97 @@
-/* common */
+*, *::before, *::after{ box-sizing: border-box; }
+/* ----------------
+common mobile
+--------------------- */
 
 body{
-    
+    font-family: source-han-sans-japanese, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    color: #383838;
+}
+h2{
+    font-family: semplicitapro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    color: #383838;
+}
+a{
+    text-decoration: none;
+}
+
+/* ----------------
+header
+--------------------- */
+header{
+    width: 100vw;
+    padding-top: 30px;
+}
+header .logo{
+    height: 19px;
+    display: flex;
+    margin: 0 0 30px 20px;
+    position: relative;
+}
+header .background{
+    width: 40%;
+    height: 110vh;
+    background-color: #B3EFB3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+header .logo h1{
+    width: 75px;
+}
+header .logo h1 img{
+    width: 100%;
+}
+header .logo p{
+    font-size: 7px;
+    position: absolute;
+    left: 85px;
+    bottom: 2px;
+}
+header figure{
+    width: 94.871%;
+    height: 680px;
+    overflow: hidden;
+    position: relative;
+}
+header figure img{
+    position: absolute;
+    top: 0;
+    right: -330px;
+    height: 118%;
+}
+header .date{
+    width: 100%;
+    height: 86px;
+    background-color: rgba(252, 233, 92, 0.9);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    /* padding: 0 10% 0 10%; */
+}
+header .date p{
+    font-size: 13px;
+    color: #707070;
+}
+
+
+/* ----------------
+concept
+--------------------- */
+.concept h1{
+    width: 136px;
+}
+.concept h1 img{
+    width: 100%;
 }
