@@ -83,6 +83,12 @@ section{
 .deco-white{
     background-color: #ffffff;
 }
+.number{
+    color: rgba(0 0 0 / 0);
+    -webkit-text-stroke: 1px #707070;
+    text-shadow: 3px 3px 0 #ffffff;
+}
+
 
 /* ----------------
 header
@@ -233,4 +239,120 @@ h3{
 }
 .set-box figure img{
     width: 100%;
+}
+
+
+
+/* ----------------
+reason
+--------------------- */
+.reason .title{
+    margin-bottom: 76px;
+}
+.reason-background{
+    width: 100vw;
+    height: 900px;
+    position: relative;
+}
+.reason-background figure{
+    width: 80%;
+    height: 786px;
+    margin: 0 0 0 auto;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.reason-background figure img{
+    position: absolute;
+    top: 0;
+    left: -600px;
+    height: 105vh;
+}
+.reason-background .background{
+    width: 79.487%;
+    height: 768px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: #B3EFB3;
+    z-index: -1;
+}
+.reason-area{
+    padding: 0 20px;
+    position: absolute;
+    top: 160px;
+    left: 0;
+}
+.reason-box{
+    width: 305px;
+    height: 160px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    padding: 25px 20px 20px 18px;
+    margin: 0 0 54px 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.reason-box:nth-of-type(2){
+    margin: 0 0 54px 30px;
+}
+.reason-box::before{
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 100%;
+    height: 100%;
+    /* background-color: #ffffff; */
+    border: 1px solid #575757;
+}
+.reason-box .number{
+    font-family: semplicitapro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 60px;
+    text-shadow: 3px 3px 0 #F8E554;
+}
+.reason-text{
+    width: 80%;
+}
+.reason-box .reason-comment, h3{
+    /* margin-left: 50px; */
+}
+.reason-box h3{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.reason-box .reason-comment{
+    font-size: 10px;
+    line-height: 2;
+}
+
+/* ----------------
+footer
+--------------------- */
+.ctv{
+    width: 100%;
+    /* height: 270px; */
+    background-color: #B3EFB3;
+    padding: 76px 0 10px 0;
+    margin-bottom: 16px;
+}
+.ctv p{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    margin-bottom: 40px;
+}
+.ctv span{
+    font-family: semplicitapro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.copyright{
+    font-size: 8px;
+    text-align: center;
+    margin-bottom: 16px;
 }
