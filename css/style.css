@@ -16,9 +16,72 @@ h2{
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     color: #383838;
+    font-size: 25px;
+    letter-spacing: 0.75px;
+    margin-bottom: 4px;
+}
+.title{
+    text-align: center;
+    margin-bottom: 22px;
+}
+.title p{
+    font-size: 10px;
+    letter-spacing: 0.9px;
+}
+.title-comment{
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 2;
+    margin-bottom: 76px;
 }
 a{
     text-decoration: none;
+}
+.btn{
+    width: 195px;
+    height: 53px;
+    position: relative;
+    margin: 0 auto 76px auto;
+}
+.btn .border{
+    width: 190px;
+    height: 48px;
+    border: 2px solid #575757;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.btn a{
+    width: 190px;
+    height: 48px;
+    background-color: #F8E554;
+    padding: 15px;
+    color: #383838;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: block;
+}
+section{
+    margin-bottom: 76px;
+}
+.deco-left{
+    width: 320px;
+    height: 20px;
+    background-color: #B3EFB3;
+    margin-bottom: 76px;
+}
+.deco-right{
+    width: 320px;
+    height: 20px;
+    background-color: #B3EFB3;
+    text-align: left;
+    margin: 0 0 76px auto;
+}
+.deco-white{
+    background-color: #ffffff;
 }
 
 /* ----------------
@@ -36,7 +99,7 @@ header .logo{
 }
 header .background{
     width: 40%;
-    height: 110vh;
+    height: 105vh;
     background-color: #B3EFB3;
     position: absolute;
     top: 0;
@@ -55,9 +118,17 @@ header .logo p{
     left: 85px;
     bottom: 2px;
 }
+h4{
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    font-size: 16px;
+    line-height: 1.9;
+    z-index: 5;
+}
 header figure{
     width: 94.871%;
-    height: 680px;
+    height: 83vh;
     overflow: hidden;
     position: relative;
 }
@@ -71,9 +142,10 @@ header .date{
     width: 100%;
     height: 86px;
     background-color: rgba(252, 233, 92, 0.9);
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
+    padding: 15px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,9 +161,76 @@ header .date p{
 /* ----------------
 concept
 --------------------- */
+.concept{
+    margin: 200px 0 76px 0;
+    padding: 0 20px;
+}
+.concept p{
+    font-size: 10px;
+}
+.concept .concept-text{
+    line-height: 3.5em;
+    margin-bottom: 52px;
+}
+.concept p:nth-of-type(2){
+    line-height: 2.8em;
+    margin-bottom: 26px;
+}
+.logo{
+    margin-left: 50%;
+}
+.furigana{
+    letter-spacing: 5px;
+    margin-left: 60px;
+}
 .concept h1{
     width: 136px;
 }
 .concept h1 img{
+    width: 100%;
+}
+
+
+/* ----------------
+recommend
+--------------------- */
+
+.recommend-set{
+    background-color: #B3EFB3;
+    padding: 70px 0 20px 0;
+}
+.set-box{
+    padding: 0 20px;
+}
+h3, .set-price{
+    margin-bottom: 12px;
+}
+.set-price{
+    font-size: 17px;
+    letter-spacing: 1.7px;
+    text-align: right;
+}
+.set-price span{
+    font-family: semplicitapro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.set-comment{
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    line-height: 1.8;
+    margin-bottom: 34px;
+}
+h3{
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    line-height: 1.4;
+}
+.set-box figure{
+    width: 100%;
+    margin-bottom: 12px;
+    /* height: 370px; */
+}
+.set-box figure img{
     width: 100%;
 }
