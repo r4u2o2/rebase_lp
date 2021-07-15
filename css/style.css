@@ -168,8 +168,10 @@ header .date p{
 concept
 --------------------- */
 .concept{
+    height: 330px;
     margin: 200px 0 76px 0;
-    padding: 0 20px;
+    padding: 0 5.128%;
+    position: relative;
 }
 .concept p{
     font-size: 10px;
@@ -180,10 +182,12 @@ concept
 }
 .concept p:nth-of-type(2){
     line-height: 2.8em;
-    margin-bottom: 26px;
+    margin-bottom: 50px;
 }
 .logo{
-    margin-left: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
 }
 .furigana{
     letter-spacing: 5px;
@@ -279,6 +283,7 @@ reason
     z-index: -1;
 }
 .reason-area{
+    width: 80%;
     padding: 0 20px;
     position: absolute;
     top: 160px;
@@ -619,4 +624,103 @@ footer
     font-size: 8px;
     text-align: center;
     margin-bottom: 16px;
+}
+
+
+
+
+/* ----------------
+pc
+--------------------- */
+@media(min-width: 750px){
+    /* ------ common
+    ------------ */
+    .deco-left, .deco-right{
+        width: 70%;
+    }
+    .title h2{
+        font-size: 30px;
+    }
+    .title-comment{
+        font-size: 13px;
+    }
+
+    /* ------ header
+    ------------ */
+    header figure{
+        width: 85%;
+        height: 83vh;
+    }
+    header figure img{
+        position: unset;
+    }
+    header .background{
+        width: 33.142%;
+    }
+
+    /* ------ concept
+    ------------ */
+    .concept{
+        margin: 200px 0 76px 18.357%;
+    }
+    .concept p{
+        font-size: 13px;
+    }
+    .logo{
+        margin-left: 65%;
+    }
+    .logo .furigana{
+        font-size: 10px;
+        letter-spacing: 5px;
+        margin-left: 55px;
+    }
+
+
+    /* ------ recomment
+    ------------ */
+    .recommend-box h3{
+        font-size: 13px;
+    }
+    .recommend-set{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .recommend-set .deco-right{
+        display: none;
+    }
+    .recommend-set .deco-left{
+        display: none;
+    }
+
+    /* ------ reason
+    ------------ */
+    .reason-background figure{
+        width: 73.357%;
+        height: 786px;
+        margin: 0 0 0 auto;
+    }
+    .reason-background figure img{
+        position: unset;
+    }
+    .reason-background .background{
+        width: 36.857%;
+        height: 768px;
+    }
+    .reason-area{
+        width: 80%;
+        position: absolute;
+        top: 160px;
+        left: 10%;
+    }
+    .reason-box{
+        width: 50.357%;
+        margin: 0 0 10px 0;
+    }
+    .reason-box:nth-of-type(2){
+        margin: 0 0 10px auto;
+    }
+    /* ------ price
+    ------------ */
+
 }
