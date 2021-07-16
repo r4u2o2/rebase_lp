@@ -1,5 +1,99 @@
 $(function(){
-    
+    // ------
+    // アニメーション
+    // -----
+    // 1. 要素の位置を取得
+    var cctPosY01 = $('.concept-text').offset().top;
+    console.log('cctPosY01:' + cctPosY01);
+
+    // 2. スクロール位置取得
+    $(window).on('scroll', function(){
+        var dy = $(this).scrollTop();
+        // console.log('dy' + dy);
+    // 3. 条件文
+    // console.log($(window).height());
+    // 4. 対象要素にクラスの付与
+    if(cctPosY01- $(window).height() < dy)
+    {
+        $('.concept').addClass('fade-in');
+    }
+    });
+
+    // 1. 要素の位置を取得
+    var rcmPosY01 = $('.recommend-box').offset().top;
+    console.log('rcmPosY01:' + rcmPosY01);
+
+    // 2. スクロール位置取得
+    $(window).on('scroll', function(){
+        var dy = $(this).scrollTop();
+        // console.log('dy' + dy);
+    // 3. 条件文
+    // console.log($(window).height());
+    // 4. 対象要素にクラスの付与
+    if(rcmPosY01- $(window).height() < dy)
+    {
+        $('.recommend-set').addClass('fade-in');
+    }
+    });
+
+    // 1. 要素の位置を取得
+    var rsnPosY01 = $('.reason-box').offset().top;
+    console.log('rsnPosY01:' + rsnPosY01);
+
+    // 2. スクロール位置取得
+    $(window).on('scroll', function(){
+        var dy = $(this).scrollTop();
+        // console.log('dy' + dy);
+    // 3. 条件文
+    // console.log($(window).height());
+    // 4. 対象要素にクラスの付与
+    if(rsnPosY01- $(window).height() < dy)
+    {
+        $('.reason01').addClass('fade-in');
+        $('.reason02').addClass('fade-in-second');
+        $('.reason03').addClass('fade-in-third');
+    }
+    });
+
+
+    // 1. 要素の位置を取得
+    var prcPosY01 = $('.wrapper').offset().top;
+    console.log('prcPosY01:' + prcPosY01);
+
+    // 2. スクロール位置取得
+    $(window).on('scroll', function(){
+        var dy = $(this).scrollTop();
+        // console.log('dy' + dy);
+    // 3. 条件文
+    // console.log($(window).height());
+    // 4. 対象要素にクラスの付与
+    if(prcPosY01- $(window).height() < dy)
+    {
+        $('.wrapper').addClass('fade-in');
+    }
+    });
+
+    // 1. 要素の位置を取得
+    var htrPosY01 = $('.howto01').offset().top;
+    console.log('htrPosY01:' + htrPosY01);
+
+    // 2. スクロール位置取得
+    $(window).on('scroll', function(){
+        var dy = $(this).scrollTop();
+        // console.log('dy' + dy);
+    // 3. 条件文
+    // console.log($(window).height());
+    // 4. 対象要素にクラスの付与
+    if(htrPosY01- $(window).height() < dy)
+    {
+        $('.howto01').addClass('fade-in');
+        $('.howto02').addClass('fade-in-second');
+        $('.howto03').addClass('fade-in-third');
+        $('.howto04').addClass('fade-in-fourth');
+        $('.howto05').addClass('fade-in-fifth');
+    }
+    });
+
     // ------
     // Rental Price tab
     // -----
@@ -48,4 +142,28 @@ $(function(){
       $(this).addClass('close');//クラス名closeを付与
     }
   });
+
+
+
+    // 4日後の日付表示
+    var date = new Date();
+    date.setDate(date.getDate() + 4);
+    var year  = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var day   = date.getDate();
+    var week = date.getDay();
+
+    var week_ja= new Array("日","月","火","水","木","金","土");
+        
+    $(window).on('load', function(){
+    // console.log('ロード');
+    // console.log(month + '月');
+    console.log(week_ja[week] + '曜日');
+    $('.month').text(month);
+    $('.day').text(day);
+    $('.week').text('（' + week_ja[week] + '）');
+    $('.banner').addClass('right-in');
+    $('.date').addClass('bottom-in');
+    });
+    
 });

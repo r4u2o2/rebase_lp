@@ -98,7 +98,7 @@ section{
 
 
 /* ----------------
-header
+animation
 --------------------- */
 
 @keyframes fade{
@@ -108,6 +108,68 @@ header
     100%{
         opacity: 1;
     }
+}
+@keyframes bottom-in{
+    0%{
+        bottom: -30%;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.bottom-in{
+    /* アニメーション */
+    animation-name: bottom-in;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.fade-in{
+    /* アニメーション */
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.fade-in-second{
+    /* アニメーション */
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.fade-in-third{
+    /* アニメーション */
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.fade-in-fourth{
+    /* アニメーション */
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0.9s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.fade-in-fifth{
+    /* アニメーション */
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 /* ----------------
@@ -120,7 +182,8 @@ header{
 header .logo{
     width: 100vw;
     height: 19px;
-    margin: 0 0 30px 5%;
+    padding: 0 0 0 5%;
+    margin: 0 0 30px 0;
     display: flex;
     position: relative;
 }
@@ -142,7 +205,7 @@ header .logo h1 img{
 header .logo p{
     font-size: 7px;
     position: absolute;
-    left: 85px;
+    left: 130px;
     bottom: 2px;
 }
 h4{
@@ -172,7 +235,7 @@ header .date{
     position: fixed;
     right: 0;
     bottom: 0;
-    padding: 15px 60px;
+    padding: 15px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -182,6 +245,29 @@ header .date{
 header .date p{
     font-size: 13px;
     color: #707070;
+}
+.date-center{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.25px;
+}
+.month, .day{
+    font-family: semplicitapro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 38px;
+    color: #ffffff;
+    border: 1px #707070;
+    text-shadow:
+    1px 0 0 #707070,
+    0 1px 0 #707070,
+    -1px 0 0 #707070,
+    0 -1px 0 #707070
+}
+.week{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.25px;
 }
 
 
@@ -193,6 +279,7 @@ concept
     margin: 200px 0 76px 0;
     padding: 0 5.128%;
     position: relative;
+    opacity: 0;
 }
 .concept p{
     font-size: 10px;
@@ -229,6 +316,7 @@ recommend
 .recommend-set{
     background-color: #B3EFB3;
     padding: 70px 0 0px 0;
+    opacity: 0;
 }
 .recommend-box{
     padding: 0 20px;
@@ -320,6 +408,7 @@ reason
     display: flex;
     justify-content: space-between;
     position: relative;
+    opacity: 0;
 }
 .reason-box:nth-of-type(2){
     margin: 0 0 54px 30px;
@@ -427,6 +516,7 @@ Rental Price
     /* height: 68vh; */
     /* padding: 0 20px; */
     margin: 0 0 40px 0;
+    opacity: 0;
     /* overflow: hidden; */
 }
 .slider{
@@ -612,6 +702,7 @@ how to Rental
     padding: 5%;
     box-shadow: 10px 10px #B3EFB3;
     margin-bottom: 30px;
+    opacity: 0;
 }
 .howto02, .howto04{
     margin: 0 0 30px auto;
@@ -758,10 +849,19 @@ pc
     header .background{
         width: 33.142%;
     }
+    header .date{
+        padding: 15px 30%;
+        z-index: 5;
+    }
+    header .date p{
+        font-size: 13px;
+        color: #707070;
+    }
 
     /* ------ concept
     ------------ */
     .concept{
+        height: 400px;
         margin: 200px 0 76px 18.357%;
     }
     .concept p{
