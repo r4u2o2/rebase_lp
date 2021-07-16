@@ -37,7 +37,9 @@ $(function(){
     });
 
     // 1. 要素の位置を取得
-    var rsnPosY01 = $('.reason-box').offset().top;
+    var rsnPosY01 = $('.reason01').offset().top;
+    var rsnPosY02 = $('.reason02').offset().top;
+    var rsnPosY03 = $('.reason03').offset().top;
     console.log('rsnPosY01:' + rsnPosY01);
 
     // 2. スクロール位置取得
@@ -50,7 +52,11 @@ $(function(){
     if(rsnPosY01- $(window).height() < dy)
     {
         $('.reason01').addClass('fade-in');
+    }
+    if(rsnPosY02- $(window).height() < dy){
         $('.reason02').addClass('fade-in-second');
+    }
+    if(rsnPosY03- $(window).height() < dy){
         $('.reason03').addClass('fade-in-third');
     }
     });
@@ -75,7 +81,11 @@ $(function(){
 
     // 1. 要素の位置を取得
     var htrPosY01 = $('.howto01').offset().top;
-    console.log('htrPosY01:' + htrPosY01);
+    var htrPosY02 = $('.howto02').offset().top;
+    var htrPosY03 = $('.howto03').offset().top;
+    var htrPosY04 = $('.howto04').offset().top;
+    var htrPosY05 = $('.howto05').offset().top;
+    // console.log('htrPosY01:' + htrPosY01);
 
     // 2. スクロール位置取得
     $(window).on('scroll', function(){
@@ -87,12 +97,25 @@ $(function(){
     if(htrPosY01- $(window).height() < dy)
     {
         $('.howto01').addClass('fade-in');
+    }
+    if(htrPosY02- $(window).height() < dy)
+    {
         $('.howto02').addClass('fade-in-second');
+    }
+    if(htrPosY03- $(window).height() < dy)
+    {
         $('.howto03').addClass('fade-in-third');
+    }
+    if(htrPosY04- $(window).height() < dy)
+    {
         $('.howto04').addClass('fade-in-fourth');
+    }
+    if(htrPosY05- $(window).height() < dy)
+    {
         $('.howto05').addClass('fade-in-fifth');
     }
     });
+
 
     // ------
     // Rental Price tab
