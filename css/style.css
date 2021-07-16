@@ -98,9 +98,10 @@ header{
     padding-top: 30px;
 }
 header .logo{
+    width: 100vw;
     height: 19px;
+    margin: 0 0 30px 5%;
     display: flex;
-    margin: 0 0 30px 20px;
     position: relative;
 }
 header .background{
@@ -184,7 +185,7 @@ concept
     line-height: 2.8em;
     margin-bottom: 50px;
 }
-.logo{
+.concept .logo{
     position: absolute;
     bottom: 0;
     right: 15%;
@@ -323,9 +324,7 @@ reason
 .reason-text{
     width: 80%;
 }
-.reason-box .reason-comment, h3{
-    /* margin-left: 50px; */
-}
+
 .reason-box h3{
     font-size: 14px;
     letter-spacing: 1px;
@@ -382,44 +381,45 @@ Rental Price
     background-color: #EBEBEB;
 }
 
-.cursur-box{
+/* .cursur-box{
     display: flex;
     justify-content: space-between;
     margin: -60% 0 130px 0;
-}
+} */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
   }
-.carousel {
+.wrapper {
     width: 100vw;
-    height: 650px;
+    height: 68vh;
     /* padding: 0 20px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     overflow: hidden;
 }
-.set-area{
-    width: 1026px;
-    margin-left: 22px;
-    /* margin: 0 10px; */
-    /* overflow: hidden; */
-    display: flex;
-    justify-content: space-between;
+.slider{
+    /* width: 1026px; */
+    position: relative;
+    /* margin-left: 22px; */
+    /* display: flex;
+    justify-content: space-between; */
 }
-.set-box{
-    width: 330px;
+.slider-item{
+    width: 90%;
+    height: 68vh;
+    /* margin: 0 auto 40px auto; */
     /* margin-right: 12px; */
     /* margin: 0 2% 70px 2%; */
     background-color: #B3EFB3;
     border-radius: 10px;
     padding: 40px 25px;
 }
-.set-box figure{
+.slider-item figure{
     width: 100%;
 }
-.set-box figure img{
+.slider-item figure img{
     width: 100%;
 }
 .set-name{
@@ -458,7 +458,7 @@ Rental Price
 .price-box .set-price{
     text-align: center;
 }
-.set-box .btn{
+.slider-item .btn{
     margin-bottom: 0;
 }
 .cursur{
