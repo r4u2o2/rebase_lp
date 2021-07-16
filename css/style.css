@@ -543,7 +543,7 @@ Rental Price
 .slick-next {
     position: absolute;
     z-index: 3;
-    top: 75%;
+    top: 80%;
     cursor: pointer;
     outline: none;
     height: 50px;
@@ -942,10 +942,10 @@ footer
         font-size: 15px;
     }
     .slick-next{
-        right: 15% !important;
+        right: 12% !important;
     }
     .slick-prev{
-        left: 15% !important;
+        left: 12% !important;
     }
     .service{
         width: 150px;
@@ -1003,7 +1003,7 @@ footer
     ------------ */
     .howto{
         width: 100vw;
-        height: 130vh;
+        height: 1000px;
         padding: 0 5%;
         position: relative;
     }

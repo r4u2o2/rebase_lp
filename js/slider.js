@@ -4,7 +4,7 @@ $('.slider').slick({
     autoplaySpeed: 3000,
     speed: 500,
     centerMode: true,
-    centerPadding: '200px',
+    centerPadding: '150px',
     slidesToShow: 1,
     lazyLoad: 'progressive',
     // mobileFirst: true,
