@@ -2,7 +2,10 @@
 /* ----------------
 common mobile
 --------------------- */
-
+*{
+    min-width: 0;
+    min-height: 0;
+}
 body{
     font-family: source-han-sans-japanese, sans-serif;
     font-weight: 400;
@@ -204,8 +207,9 @@ header .logo h1 img{
 }
 header .logo p{
     font-size: 7px;
-    position: absolute;
-    left: 130px;
+    margin: 5px 0 0 18px;
+    /* position: absolute; */
+    left: 15%;
     bottom: 2px;
 }
 h4{
@@ -379,7 +383,7 @@ reason
 .reason-background figure img{
     position: absolute;
     top: 0;
-    left: -600px;
+    left: -500px;
     height: 105vh;
 }
 .reason-background .background{
@@ -392,8 +396,9 @@ reason
     z-index: -1;
 }
 .reason-area{
-    width: 80%;
+    width: 100%;
     padding: 0 20px;
+    margin: 0 auto;
     position: absolute;
     top: 160px;
     left: 0;
@@ -411,7 +416,7 @@ reason
     opacity: 0;
 }
 .reason-box:nth-of-type(2){
-    margin: 0 0 54px 30px;
+    margin: 0 0 54px auto;
 }
 .reason-box::before{
     content: '';
@@ -468,6 +473,11 @@ Rental Price
 }
 .tab li{
     margin-bottom: 12px;
+    /* トランジション */
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
 }
 .tab01{
     font-size: 33px;
@@ -488,23 +498,15 @@ Rental Price
     width: 100%;
     height: 5px;
     background-color: #EBEBEB;
+    /* トランジション */
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
 }
 #tab01 .tab-line{
     background-color: #B3EFB3;
 }
-/* .cursur-box{
-    display: flex;
-    justify-content: space-between;
-    margin: -60% 0 130px 0;
-    display: none;
-} */
-
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-  } */
 .people12{
     display: none;
 }
@@ -634,18 +636,7 @@ Rental Price
 .slider-item .btn{
     margin-bottom: 0;
 }
-/* .cursur{
-    width: 68px;
-    height: 68px;
-    border-radius: 50%;
-    background-color: rgba(248, 248, 248, 1);
-    padding: 24px;
-} */
-/* .cursur p{
-    font-size: 18px;
-    font-weight: 700;
-    color: #383838;
-} */
+
 .set-btn{
     width: 320px;
 }
@@ -771,6 +762,9 @@ Q&A
     background-color: #ffffff;
     display: none;
 }
+.answer p{
+    line-height: 2;
+}
 
 
 /* ----------------
@@ -802,13 +796,9 @@ footer
 
 
 
-@media(min-width: 480px){
-    .slider-item{
-        width: 50%;
-    }
-}
+
 /* ----------------
-pc
+レスポンシブ pc
 --------------------- */
 @media(min-width: 750px){
     /* ------ common
@@ -925,26 +915,43 @@ pc
     ------------ */
     .slider-item{
         width: 60%;
-        display: flex;
-        justify-content: space-between;
+        display: flex !important;
         padding: 20px 20px;
     }
     .slider-item figure{
-        width: 70%;
+        width: 60%;
         margin-right: 20px;
     }
     .slider-item figure img{
         width: 100%;
+    }
+    .ultext-box{
+        width: 40%;
+        position: relative;
     }
     .set-name{
         text-align: left;
         font-size: 13px;
         line-height: 1.8;
         letter-spacing: 1.4px;
-        margin-bottom: 130px;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        /* margin-bottom: 130px; */
+    }
+    .price-box{
+        position: absolute;
+        left: 0;
+        bottom: 5%;
     }
     .price-box .set-price{
         font-size: 15px;
+    }
+    .slick-next{
+        right: 10% !important;
+    }
+    .slick-prev{
+        left: 10% !important;
     }
     .service{
         width: 150px;
@@ -1037,12 +1044,12 @@ pc
     }
     .howto04{
         position: absolute;
-        top: 480px;
+        top: 550px;
         left: 20%;
     }
     .howto05{
         position: absolute;
-        top: 530px;
+        top: 580px;
         left: 55%;
     }
 
