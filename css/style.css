@@ -9,6 +9,13 @@ body{
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     color: #383838;
+    /* アニメーション */
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 h2{
     font-family: semplicitapro, sans-serif;
@@ -89,6 +96,19 @@ section{
     text-shadow: 3px 3px 0 #ffffff;
 }
 
+
+/* ----------------
+header
+--------------------- */
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 /* ----------------
 header
@@ -208,7 +228,7 @@ recommend
 
 .recommend-set{
     background-color: #B3EFB3;
-    padding: 70px 0 20px 0;
+    padding: 70px 0 0px 0;
 }
 .recommend-box{
     padding: 0 20px;
@@ -380,24 +400,34 @@ Rental Price
     height: 5px;
     background-color: #EBEBEB;
 }
-
+#tab01 .tab-line{
+    background-color: #B3EFB3;
+}
 /* .cursur-box{
     display: flex;
     justify-content: space-between;
     margin: -60% 0 130px 0;
+    display: none;
 } */
-* {
+
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-  }
+  } */
+.people12{
+    display: none;
+}
+.soro{
+    display: none;
+}
 .wrapper {
     width: 100vw;
-    height: 68vh;
+    /* height: 68vh; */
     /* padding: 0 20px; */
-    /* margin: 0 auto; */
-    overflow: hidden;
+    margin: 0 0 40px 0;
+    /* overflow: hidden; */
 }
 .slider{
     /* width: 1026px; */
@@ -406,9 +436,11 @@ Rental Price
     /* display: flex;
     justify-content: space-between; */
 }
+
 .slider-item{
     width: 90%;
-    height: 68vh;
+    /* height: 68vh; */
+    margin: 0 6px;
     /* margin: 0 auto 40px auto; */
     /* margin-right: 12px; */
     /* margin: 0 2% 70px 2%; */
@@ -422,6 +454,57 @@ Rental Price
 .slider-item figure img{
     width: 100%;
 }
+.slick-prev, 
+.slick-next {
+    position: absolute;
+    z-index: 3;
+    top: 75%;
+    cursor: pointer;
+    outline: none;
+    height: 50px;
+    width: 50px;
+}
+.slick-next{
+    right: 3%!important;
+}
+.slick-next:before{
+    background: url(../img/next.png)!important;
+    background-size: contain!important;
+}
+  .slick-prev{
+    left: 3%!important;
+  }
+  .slick-prev:before{
+    background: url(../img/prev.png)!important;
+    background-size: contain!important;
+  }
+  .slick-arrow{
+    z-index:2!important;
+    width:60px!important;
+    height:60px!important;
+  }
+  .slick-arrow:before{
+    content:""!important;
+    width: 100%!important;
+    height: 100%!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity:1!important;
+  }
+.slick-arrow:before{
+	content:""!important;
+}
+.slick-prev {/*戻る矢印の位置と形状*/
+    left:10%;
+    /* transform: rotate(-135deg); */
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right:10%;
+    /* transform: rotate(45deg); */
+}
+
 .set-name{
     text-align: left;
     font-size: 14px;
@@ -461,18 +544,18 @@ Rental Price
 .slider-item .btn{
     margin-bottom: 0;
 }
-.cursur{
+/* .cursur{
     width: 68px;
     height: 68px;
     border-radius: 50%;
     background-color: rgba(248, 248, 248, 1);
     padding: 24px;
-}
-.cursur p{
+} */
+/* .cursur p{
     font-size: 18px;
     font-weight: 700;
     color: #383838;
-}
+} */
 .set-btn{
     width: 320px;
 }
@@ -524,7 +607,7 @@ how to Rental
 }
 .howto-box{
     width: 82.285%;
-    height: 317px;
+    /* height: 317px; */
     background-color: #F8F8F8;
     padding: 5%;
     box-shadow: 10px 10px #B3EFB3;
@@ -628,7 +711,11 @@ footer
 
 
 
-
+@media(min-width: 480px){
+    .slider-item{
+        width: 50%;
+    }
+}
 /* ----------------
 pc
 --------------------- */
@@ -643,6 +730,20 @@ pc
     }
     .title-comment{
         font-size: 13px;
+    }
+    .btn{
+        width: 165px;
+        height: 45px;
+    }
+    .btn .border{
+        width: 160px;
+        height: 40px;
+    }
+    .btn a{
+        width: 160px;
+        height: 40px;
+        font-size: 13px;
+        padding: 13px;
     }
 
     /* ------ header
@@ -722,5 +823,133 @@ pc
     }
     /* ------ price
     ------------ */
+    .slider-item{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+    .slider-item figure{
+        width: 70%;
+        margin-right: 20px;
+    }
+    .slider-item figure img{
+        width: 100%;
+    }
+    .set-name{
+        text-align: left;
+        font-size: 13px;
+        line-height: 1.8;
+        letter-spacing: 1.4px;
+        margin-bottom: 130px;
+    }
+    .price-box .set-price{
+        font-size: 15px;
+    }
+    .service{
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto 10px auto;
+    }
+    .service p{
+        font-size: 10px;
+        color: #707070;
+        letter-spacing: 0.6px;
+        /* margin-bottom: 10px; */
+        text-align: center;
+    }
+    .line-left{
+        width: 15px;
+        height: 1px;
+        background-color: #707070;
+        transform:rotate(45deg);
+    }
+    .line-right{
+        width: 15px;
+        height: 1px;
+        background-color: #707070;
+        transform:rotate(-45deg);
+    }
+    .price-box .set-price{
+        text-align: center;
+    }
+    .slider-item .btn{
+        margin-bottom: 0;
+    }
+    .set-btn{
+        width: 300px;
+    }
+    .set-btn .border{
+        width: 315px;
+        height: 68px;
+    }
+    .set-btn a{
+        width: 315px;
+        height: 68px;
+        padding: 0 50px;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .tab{
+        width: 60%;
+        margin: 0 auto 40px auto;
+    }
+    /* ------ how to
+    ------------ */
+    .howto{
+        width: 100vw;
+        height: 130vh;
+        padding: 0 5%;
+        position: relative;
+    }
+    .howto-box{
+        width: 28%;
+        padding: 3%;
+        margin-bottom: 30px;
+    }
+    .howto-title p{
+        font-size: 40px;
+    }
+    .howto-title h3{
+        font-size: 13px;
+    }
+    .howto-comment{
+        font-size: 10px;
+    }
+    .howto01{
+        position: absolute;
+        top: 80px;
+        left: 5%;
+    }
+    .howto02{
+        position: absolute;
+        top: 130px;
+        right: 36%;
+    }
+    .howto03{
+        position: absolute;
+        top: 180px;
+        right: 5%;
+    }
+    .howto04{
+        position: absolute;
+        top: 480px;
+        left: 20%;
+    }
+    .howto05{
+        position: absolute;
+        top: 530px;
+        left: 55%;
+    }
 
+    /* ------ Q&A
+    ------------ */
+    .qa-box{
+        width: 70%;
+        margin: 0 auto;
+    }
 }
