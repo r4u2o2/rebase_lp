@@ -85,17 +85,19 @@ $(function(){
     var htrPosY03 = $('.howto03').offset().top;
     var htrPosY04 = $('.howto04').offset().top;
     var htrPosY05 = $('.howto05').offset().top;
-    // console.log('htrPosY01:' + htrPosY01);
+    console.log('htrPosY01:' + htrPosY01);
+    console.log('htrPosY02:' + htrPosY02);
 
     // 2. スクロール位置取得
     $(window).on('scroll', function(){
         var dy = $(this).scrollTop();
-        // console.log('dy' + dy);
+        console.log('dy' + dy);
     // 3. 条件文
     // console.log($(window).height());
     // 4. 対象要素にクラスの付与
     if(htrPosY01- $(window).height() < dy)
     {
+        console.log('1こえた')
         $('.howto01').addClass('fade-in');
     }
     if(htrPosY02- $(window).height() < dy)

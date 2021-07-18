@@ -139,7 +139,7 @@ animation
     /* アニメーション */
     animation-name: fade;
     animation-duration: 0.6s;
-    animation-delay: 0s;
+    animation-delay: 0;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -147,8 +147,8 @@ animation
 .fade-in-second{
     /* アニメーション */
     animation-name: fade;
-    animation-duration: 0.6s;
-    animation-delay: 0.4s;
+    animation-duration: 0.3s;
+    animation-delay: 0;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -156,8 +156,8 @@ animation
 .fade-in-third{
     /* アニメーション */
     animation-name: fade;
-    animation-duration: 0.6s;
-    animation-delay: 0.6s;
+    animation-duration: 0.3s;
+    animation-delay: 0;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -165,8 +165,8 @@ animation
 .fade-in-fourth{
     /* アニメーション */
     animation-name: fade;
-    animation-duration: 0.6s;
-    animation-delay: 0.8s;
+    animation-duration: 0.3s;
+    animation-delay: 0;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -174,8 +174,8 @@ animation
 .fade-in-fifth{
     /* アニメーション */
     animation-name: fade;
-    animation-duration: 0.6s;
-    animation-delay: 1s;
+    animation-duration: 0.3s;
+    animation-delay: 0;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
