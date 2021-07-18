@@ -129,6 +129,7 @@ $(function(){
         $('.tab01').css('font-size', '33px');
         $('.slider').css('display', 'none');
         $('.people34').css('display', 'block');
+        $('.people34').addClass('fade-in');
     });
     $('#tab02').on('click', function(){
         console.log('12クリック');
@@ -138,6 +139,7 @@ $(function(){
         $('.tab02').css('font-size', '33px');
         $('.slider').css('display', 'none');
         $('.people12').css('display', 'block');
+        $('.people12').addClass('fade-in');
     });
     $('#tab03').on('click', function(){
         console.log('ソロクリック');
@@ -147,6 +149,7 @@ $(function(){
         $('.tab03').css('font-size', '30px');
         $('.slider').css('display', 'none');
         $('.soro').css('display', 'block');
+        $('.soro').addClass('fade-in');
     });
 
     // ------
@@ -173,8 +176,10 @@ $(function(){
       
     if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
       $(this).removeClass('close');//クラス名を除去し
+
     }else{//それ以外は
       $(this).addClass('close');//クラス名closeを付与
+
     }
   });
 

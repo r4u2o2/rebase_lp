@@ -1,10 +1,11 @@
-$('.slider').slick({
+$(document).ready(function(){
 
+  var slider = $('.slider').slick({
     autoplay: true,
     autoplaySpeed: 3000,
     speed: 500,
     centerMode: true,
-    centerPadding: '150px',
+    centerPadding: '20%',
     slidesToShow: 1,
     lazyLoad: 'progressive',
     // mobileFirst: true,
@@ -12,7 +13,7 @@ $('.slider').slick({
     nextArrow: '<div class="slick-next"></div>',
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 750,
         settings: {
           centerMode: true,
           centerPadding: '20px',
@@ -29,4 +30,10 @@ $('.slider').slick({
       }
     ]
   });
+
+  $('.tab-box').on('click', function(){
+    slider.slick('setPosition');
+  });
+});
+
 

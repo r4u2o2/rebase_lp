@@ -54,6 +54,7 @@ a{
     position: relative;
     margin: 0 auto 76px auto;
 }
+
 .btn .border{
     width: 190px;
     height: 48px;
@@ -73,6 +74,11 @@ a{
     top: 5px;
     left: 5px;
     display: block;
+    transition-duration: 0.3s;
+}
+.btn a:hover{
+    background-color: #ffffff;
+    transition-duration: 0.3s;
 }
 section{
     margin-bottom: 76px;
@@ -132,8 +138,8 @@ animation
 .fade-in{
     /* アニメーション */
     animation-name: fade;
-    animation-duration: 1s;
-    animation-delay: 0.3s;
+    animation-duration: 0.6s;
+    animation-delay: 0s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -141,8 +147,8 @@ animation
 .fade-in-second{
     /* アニメーション */
     animation-name: fade;
-    animation-duration: 1s;
-    animation-delay: 0.3s;
+    animation-duration: 0.6s;
+    animation-delay: 0.4s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -150,7 +156,7 @@ animation
 .fade-in-third{
     /* アニメーション */
     animation-name: fade;
-    animation-duration: 1s;
+    animation-duration: 0.6s;
     animation-delay: 0.6s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
@@ -159,8 +165,8 @@ animation
 .fade-in-fourth{
     /* アニメーション */
     animation-name: fade;
-    animation-duration: 1s;
-    animation-delay: 0.9s;
+    animation-duration: 0.6s;
+    animation-delay: 0.8s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -168,8 +174,8 @@ animation
 .fade-in-fifth{
     /* アニメーション */
     animation-name: fade;
-    animation-duration: 1s;
-    animation-delay: 1.2s;
+    animation-duration: 0.6s;
+    animation-delay: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -405,7 +411,6 @@ reason
 }
 .reason-box{
     width: 305px;
-    height: 160px;
     background-color: #ffffff;
     border: 1px solid transparent;
     padding: 25px 20px 20px 18px;
@@ -437,6 +442,7 @@ reason
 }
 .reason-text{
     width: 80%;
+    margin-bottom: 30px;
 }
 
 .reason-box h3{
@@ -508,20 +514,23 @@ Rental Price
 #tab01 .tab-line{
     background-color: #B3EFB3;
 }
-.people12{
-    display: none;
-}
-.soro{
-    display: none;
-}
+
+
 .wrapper {
-    width: 100vw;
+    /* width: 100vw; */
     margin: 0 0 40px 0;
     opacity: 0;
 }
 .slider{
     position: relative;
 }
+.people12{
+    display: none;
+}
+.soro{
+    display: none;
+}
+
 
 .slider-item{
     width: 90%;
@@ -549,6 +558,7 @@ Rental Price
     outline: none;
     height: 50px;
     width: 50px;
+    filter: drop-shadow(3px 3px 8px rgba(20,20,20,0.3));
 }
 .slick-next{
     right: 3%!important;
@@ -583,12 +593,10 @@ Rental Price
 }
 .slick-prev {/*戻る矢印の位置と形状*/
     left:10%;
-    /* transform: rotate(-135deg); */
 }
 
 .slick-next {/*次へ矢印の位置と形状*/
     right:10%;
-    /* transform: rotate(45deg); */
 }
 
 .set-name{
@@ -661,6 +669,11 @@ Rental Price
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition-duration: 0.3s;
+}
+.btn-green-a:hover{
+    background-color: #ffffff;
+    transition-duration: 0.3s;
 }
 .btn-green{
     position: relative;
@@ -696,10 +709,7 @@ Rental Price
     z-index: 50;
     display: none;
     /* トランジション */
-    transition-property: all;
     transition-duration: 0.6s;
-    transition-delay: 0;
-    transition-timing-function: ease-in-out;
 }
 .service-set{
     width: 90%;
@@ -752,7 +762,7 @@ Rental Price
     cursor: pointer;
     /* トランジション */
     transition-property: all;
-    transition-duration: 0.6s;
+    transition-duration: 0.3s;
     transition-delay: 0;
     transition-timing-function: ease-in-out;
 }
@@ -827,6 +837,14 @@ Q&A
 .question p{
     font-size: 13px;
 }
+.rotate{
+    transition-duration: 0.3s;
+}
+.close .rotate{
+    transform: rotate(45deg);
+    transition-duration: 0.3s;
+}
+
 .question p:nth-of-type(2){
     font-size: 16px;
 }
@@ -845,6 +863,7 @@ Q&A
 .answer p{
     line-height: 2;
 }
+
 
 
 /* ----------------
@@ -932,10 +951,10 @@ footer
     ------------ */
     .concept{
         height: 400px;
-        margin: 200px 0 76px 18.357%;
+        margin: 200px 0 100px 18.357%;
     }
     .concept p{
-        font-size: 13px;
+        font-size: 14px;
     }
     .logo{
         margin-left: 65%;
@@ -947,7 +966,7 @@ footer
     }
 
 
-    /* ------ recomment
+    /* ------ recommend
     ------------ */
     .recommend-box h3{
         font-size: 13px;
@@ -976,7 +995,7 @@ footer
     }
     .reason-background .background{
         width: 36.857%;
-        height: 768px;
+        /* height: 768px; */
     }
     .reason-area{
         width: 80%;
@@ -986,11 +1005,19 @@ footer
     }
     .reason-box{
         width: 50.357%;
-        padding: 30px 30px 0 30px;
+        padding: 25px 25px 0 20px;
         margin: 0 0 10px 0;
     }
     .reason-box:nth-of-type(2){
         margin: 0 0 10px auto;
+    }
+    .reason-box h3{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .reason-box .reason-comment{
+        font-size: 11px;
+        line-height: 2;
     }
     /* ------ price
     ------------ */
@@ -1012,7 +1039,7 @@ footer
     }
     .set-name{
         text-align: left;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 1.8;
         letter-spacing: 1.4px;
         position: absolute;
@@ -1029,10 +1056,10 @@ footer
         font-size: 15px;
     }
     .slick-next{
-        right: 12% !important;
+        right: 16% !important;
     }
     .slick-prev{
-        left: 12% !important;
+        left: 16% !important;
     }
     .service{
         width: 150px;
@@ -1113,8 +1140,6 @@ footer
     .service-close{
         width: 50px;
         height: 50px;
-        background: url(../img/close.png) no-repeat center center;
-        background-size: cover;
         position: absolute;
         top: 3%;
         right: 3%;
@@ -1136,7 +1161,7 @@ footer
         font-size: 40px;
     }
     .howto-title h3{
-        font-size: 13px;
+        font-size: 15px;
     }
     .howto-comment{
         font-size: 10px;
