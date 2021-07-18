@@ -80,13 +80,16 @@ $(function(){
     });
 
     // 1. 要素の位置を取得
+    
     var htrPosY01 = $('.howto01').offset().top;
     var htrPosY02 = $('.howto02').offset().top;
     var htrPosY03 = $('.howto03').offset().top;
     var htrPosY04 = $('.howto04').offset().top;
     var htrPosY05 = $('.howto05').offset().top;
+    var qaPosY = $('.qa').offset().top;
     console.log('htrPosY01:' + htrPosY01);
     console.log('htrPosY02:' + htrPosY02);
+    console.log('qa:' + qaPosY);
 
     // 2. スクロール位置取得
     $(window).on('scroll', function(){
@@ -132,6 +135,7 @@ $(function(){
         $('.slider').css('display', 'none');
         $('.people34').css('display', 'block');
         $('.people34').addClass('fade-in');
+        $('.slider').slick('setPosition');
     });
     $('#tab02').on('click', function(){
         console.log('12クリック');
@@ -142,6 +146,7 @@ $(function(){
         $('.slider').css('display', 'none');
         $('.people12').css('display', 'block');
         $('.people12').addClass('fade-in');
+        $('.slider').slick('setPosition');
     });
     $('#tab03').on('click', function(){
         console.log('ソロクリック');
@@ -152,6 +157,7 @@ $(function(){
         $('.slider').css('display', 'none');
         $('.soro').css('display', 'block');
         $('.soro').addClass('fade-in');
+        $('.slider').slick('setPosition');
     });
 
     // ------

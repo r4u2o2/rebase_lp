@@ -1,6 +1,5 @@
-$(document).ready(function(){
 
-  var slider = $('.slider').slick({
+  $('.slider').slick({
     autoplay: true,
     autoplaySpeed: 3000,
     speed: 500,
@@ -31,9 +30,6 @@ $(document).ready(function(){
     ]
   });
 
-  $('.tab-box').on('click', function(){
-    slider.slick('setPosition');
-  });
-});
+
 
 

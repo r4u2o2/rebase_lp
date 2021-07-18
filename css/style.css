@@ -148,7 +148,7 @@ animation
     /* アニメーション */
     animation-name: fade;
     animation-duration: 0.3s;
-    animation-delay: 0;
+    animation-delay: 0.2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -156,8 +156,8 @@ animation
 .fade-in-third{
     /* アニメーション */
     animation-name: fade;
-    animation-duration: 0.3s;
-    animation-delay: 0;
+    animation-duration: 0.5s;
+    animation-delay: 0.4s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -165,8 +165,8 @@ animation
 .fade-in-fourth{
     /* アニメーション */
     animation-name: fade;
-    animation-duration: 0.3s;
-    animation-delay: 0;
+    animation-duration: 0.5s;
+    animation-delay: 0.6s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -174,8 +174,8 @@ animation
 .fade-in-fifth{
     /* アニメーション */
     animation-name: fade;
-    animation-duration: 0.3s;
-    animation-delay: 0;
+    animation-duration: 0.5s;
+    animation-delay: 0.8s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -244,7 +244,7 @@ header .date{
     background-color: rgba(252, 233, 92, 0.9);
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: -30%;
     padding: 15px 10%;
     display: flex;
     justify-content: space-between;
