@@ -1,3 +1,20 @@
+.point p:nth-of-type(1){
+    /* -----------------
+    数字css変更
+    ----------------- */
+    font-size: 60px;
+    /* -----------------
+    ４桁の場合：55px
+    ３桁の場合：60px
+    ----------------- */
+    color: rgba(0 0 0 / 0);
+    -webkit-text-stroke: 1px #707070;
+    text-shadow: 3px 3px 0 #ffffff;
+}
+
+
+
+
 /* ----------------
 animation
 --------------------- */
@@ -21,7 +38,9 @@ animation
     animation-fill-mode: forwards;
 }
 
-
+/* ----------------
+バナーcss
+--------------------- */
 
 header .banner{
     width: 200px;
@@ -99,19 +118,7 @@ header .banner::before{
     font-weight: 600;
     font-style: normal;
 }
-.point p:nth-of-type(1){
-    /* -----------------
-    数字css変更
-    ----------------- */
-    font-size: 60px;
-    /* -----------------
-    ４桁の場合：55px
-    ３桁の場合：60px
-    ----------------- */
-    color: rgba(0 0 0 / 0);
-    -webkit-text-stroke: 1px #707070;
-    text-shadow: 3px 3px 0 #ffffff;
-}
+
 .point p:nth-of-type(2){
     font-size: 16px;
     position: absolute;

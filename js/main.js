@@ -150,6 +150,18 @@ $(function(){
     });
 
     // ------
+    // 使い捨てセット
+    // -----
+    $('.btn-green').on('click', function(){
+        console.log('使い捨てクリック');
+        $('.overlay').css('display', 'block');
+    });
+    $('.service-close').on('click', function(){
+        $('.overlay').css('display', 'none');
+    });
+
+
+    // ------
     // Q&A
     // -----
 
